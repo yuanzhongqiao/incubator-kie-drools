@@ -1,33 +1,19 @@
-An open source rule engine, [DMN engine](https://drools.org/learn/dmn.html) and complex event processing (CEP) engine for Java™ and the JVM Platform.
-
-Drools is a business rule management system with a forward-chaining and backward-chaining inference based rules engine, allowing fast and reliable evaluation of business rules and complex event processing. A rule engine is also a fundamental building block to create an expert system which, in artificial intelligence, is a computer system that emulates the decision-making ability of a human expert.
-
-Be sure to check out the Drools' project [website](https://drools.org) and [documentation](https://drools.org/learn/documentation.html)!
-
-Developing Drools and jBPM
-==========================
-
-**If you want to build or contribute to a kiegroup project, [read this document](https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/main/README.md).** 
-
-**It will save you and us a lot of time by setting up your development environment correctly.**
-It solves all known pitfalls that can disrupt your development.
-It also describes all guidelines, tips and tricks.
-If you want your pull requests (or patches) to be merged, please respect those guidelines.
-
-
-Test execution tip
-==================
-
-Some test are meant to be executed on machine with _en_US_ locale.
-A specific profile is provided to execute them on machines with different locale, namely `test-en`.
-There are two ways to activate such profile during maven build:
-1. `-Ptest-en` (profile-id based)
-2. `-DTestEn` (property based)
-
-The following two commands will execute tests on machine with locale different than _en_US_:
-
-1. `make test -Ptest-en`
-2. `make test -DTestEn`
-
-
-
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">适用于 Java™ 和 JVM 平台的</font><font style="vertical-align: inherit;">开源规则引擎、</font></font><a href="https://drools.org/learn/dmn.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DMN 引擎和复杂事件处理 (CEP) 引擎。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Drools 是一个业务规则管理系统，具有基于前向链接和后向链接推理的规则引擎，允许快速可靠地评估业务规则和复杂的事件处理。</font><font style="vertical-align: inherit;">规则引擎也是创建专家系统的基本构建块，在人工智能中，专家系统是模拟人类专家决策能力的计算机系统。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请务必查看 Drools 的项目</font></font><a href="https://drools.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://drools.org/learn/documentation.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">！</font></font></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-developing-drools-and-jbpm" class="anchor" aria-hidden="true" tabindex="-1" href="#developing-drools-and-jbpm"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发 Drools 和 jBPM</font></font></h1>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想构建 kiegroup 项目或为 kiegroup 项目做出贡献，</font></font><a href="https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/main/README.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请阅读此文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></strong></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">正确设置您的开发环境将为您和我们节省大量时间。</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+它解决了所有可能破坏您的开发的已知陷阱。</font><font style="vertical-align: inherit;">它还描述了所有指南、提示和技巧。</font><font style="vertical-align: inherit;">如果您希望合并您的拉取请求（或补丁），请遵守这些准则。</font></font></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-test-execution-tip" class="anchor" aria-hidden="true" tabindex="-1" href="#test-execution-tip"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">测试执行提示</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">某些测试需要在具有</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">en_US</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语言环境的计算机上执行。</font><font style="vertical-align: inherit;">提供了一个特定的配置文件来在具有不同区域设置的计算机上执行它们，即</font></font><code>test-en</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">在 Maven 构建过程中，有两种方法可以激活此类配置文件：</font></font></p>
+<ol dir="auto">
+<li><code>-Ptest-en</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（基于配置文件 ID）</font></font></li>
+<li><code>-DTestEn</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（基于财产）</font></font></li>
+</ol>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下两个命令将在区域设置不同于</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">en_US 的</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">计算机上执行测试：</font></font></p>
+<ol dir="auto">
+<li><code>make test -Ptest-en</code></li>
+<li><code>make test -DTestEn</code></li>
+</ol>
+</article></div>
